@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="start|top"
-                    android:hint="Ingrese su tarea aquí"
+                    android:hint="Ingresa tu nueva tarea aquí"
                     android:maxLines="1"
                     android:padding="16dp"
                     android:textSize="18sp"
