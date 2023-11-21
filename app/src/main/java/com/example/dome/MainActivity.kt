@@ -1,5 +1,6 @@
 package com.example.dome
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.*
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -81,6 +82,7 @@ class MainActivity : AppCompatActivity() {
             nuevaTareaEditText.hint = "Tarea"
             nuevaTareaEditText.textSize = 20f
             nuevaTareaEditText.setPadding(14, 14, 14, 14)
+            nuevaTareaEditText.setBackgroundColor(Color.TRANSPARENT)
             nuevaTareaEditText.text = Editable.Factory.getInstance().newEditable(tarea)
 
             val nuevaCheckBox = CheckBox(this)
