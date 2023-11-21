@@ -8,8 +8,6 @@ import android.text.Editable
 import android.graphics.Typeface
 import androidx.core.content.res.ResourcesCompat
 
-
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var tasksContainer: LinearLayout
@@ -61,7 +59,6 @@ class MainActivity : AppCompatActivity() {
             // Lógica para el botón de configuraciones
         }
     }
-
     override fun onBackPressed() {
         finish()
         super.onBackPressed()
