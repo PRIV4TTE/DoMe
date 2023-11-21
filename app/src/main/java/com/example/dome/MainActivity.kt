@@ -5,6 +5,8 @@ import android.widget.*
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
+import android.graphics.Typeface
+import androidx.core.content.res.ResourcesCompat
 
 
 
@@ -25,6 +27,16 @@ class MainActivity : AppCompatActivity() {
         itemTextView = findViewById(R.id.taskEditText)
         itemCheckBox = findViewById(R.id.itemCheckBox)
         tasksContainer = findViewById(R.id.tasksContainer)
+
+        val itemTextView: EditText = findViewById(R.id.taskEditText)
+
+        // Carga la fuente personalizada desde los recursos
+        val typeface: Typeface? = ResourcesCompat.getFont(this, R.font.montserrat_regular)
+
+        // Verifica si la fuente se cargó correctamente y establece la fuente en el EditText
+        if (typeface != null) {
+            itemTextView.typeface = typeface
+        }
 
         addTaskButton.setOnClickListener {
             agregarNuevaTarea()
@@ -70,8 +82,8 @@ class MainActivity : AppCompatActivity() {
             nuevaTareaEditText.layoutParams =
                 LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f)
             nuevaTareaEditText.hint = "Tarea"
-            nuevaTareaEditText.textSize = 16f
-            nuevaTareaEditText.setPadding(16, 16, 16, 16)
+            nuevaTareaEditText.textSize = 20f
+            nuevaTareaEditText.setPadding(14, 14, 14, 14)
             nuevaTareaEditText.text = Editable.Factory.getInstance().newEditable(tarea)
 
             val nuevaCheckBox = CheckBox(this)
