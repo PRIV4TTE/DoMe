@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             agregarNuevaTarea()
         }
 
-        titleTextView.text = "DoMe"
+        titleTextView.setText(R.string.app_name)
         itemCheckBox.isChecked = false
 
         val backButton: ImageButton = findViewById(R.id.backButton)
@@ -102,14 +102,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 

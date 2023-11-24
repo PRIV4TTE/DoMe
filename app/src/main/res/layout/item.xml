@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
 
     <LinearLayout
-        android:id="@+id/tasksContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+            android:id="@+id/tasksContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="DoMe"
-            android:textSize="20sp"
-            android:fontFamily="@font/montserrat_regular" />
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="DoMe"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_regular"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="end">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
 
             <EditText
                     android:id="@+id/taskEditText"
@@ -39,60 +39,59 @@
                     android:textSize="18sp"
                     android:layout_marginBottom="16dp"
                     android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp" />
+                    android:layout_marginStart="16dp"/>
 
             <CheckBox
-                android:id="@+id/itemCheckBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Item completado" />
+                    android:id="@+id/itemCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Item completado"/>
 
         </LinearLayout>
-
 
 
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="Botón de retroceso"
-        android:background="@drawable/circular_background"
-        app:srcCompat="@drawable/back"
-        android:layout_gravity="start|bottom" />
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Botón de retroceso"
+            android:background="@drawable/circular_background"
+            app:srcCompat="@drawable/back"
+            android:layout_gravity="start|bottom"/>
 
     <ImageButton
-        android:id="@+id/settingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/circular_background"
-        android:contentDescription="Botón de configuraciones"
-        app:srcCompat="@drawable/settings"
-        android:layout_gravity="end|bottom" />
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circular_background"
+            android:contentDescription="Botón de configuraciones"
+            app:srcCompat="@drawable/settings"
+            android:layout_gravity="end|bottom"/>
 
     <ImageButton
-        android:id="@+id/alarmButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/circular_background"
-        android:contentDescription="Botón de alarma"
-        app:srcCompat="@drawable/alarm"
-        android:layout_gravity="center|bottom" />
+            android:id="@+id/alarmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circular_background"
+            android:contentDescription="Botón de alarma"
+            app:srcCompat="@drawable/alarm"
+            android:layout_gravity="center|bottom"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addTaskButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
-        android:layout_marginEnd="20dp"
-        android:layout_gravity="bottom|end"
-        android:contentDescription="Agregar tarea"
-        android:src="@drawable/add" />
+            android:id="@+id/addTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="bottom|end"
+            android:contentDescription="Agregar tarea"
+            android:src="@drawable/add"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
