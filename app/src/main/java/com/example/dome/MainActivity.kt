@@ -80,10 +80,11 @@ class MainActivity : AppCompatActivity() {
             nuevaTareaEditText.layoutParams =
                 LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f)
             nuevaTareaEditText.hint = "Tarea"
-            nuevaTareaEditText.textSize = 18f
-            nuevaTareaEditText.setPadding(14, 14, 14, 14)
+            nuevaTareaEditText.textSize = 20f
+            nuevaTareaEditText.setPadding(18, 18, 18, 18)
             nuevaTareaEditText.setBackgroundColor(Color.TRANSPARENT)
             nuevaTareaEditText.text = Editable.Factory.getInstance().newEditable(tarea)
+
 
             val nuevaCheckBox = CheckBox(this)
             nuevaCheckBox.layoutParams = LinearLayout.LayoutParams(

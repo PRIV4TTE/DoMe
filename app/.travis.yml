@@ -1,0 +1,33 @@
+language: android
+jdk: openjdk11
+
+services:
+  - docker
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-31.0.0
+    - android-31
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+
+before_install:
+  - chmod +x gradlew
+
+script:
+  - ./gradlew assembleDebug
+  - ./gradlew test
+
+# Configuración de Jenkins
+jenkins:
+  deploy:
+    provider: jenkins
+    edge: true
+    on:
+      branch: main
+    username: tu_usuario_de_jenkins
+    password: $JENKINS_API_TOKEN
+    app: DoMe

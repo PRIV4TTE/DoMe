@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "931655234725",
+    "project_id": "dome-e553c",
+    "storage_bucket": "dome-e553c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931655234725:android:62cfed8647ab52cab8094c",
+        "android_client_info": {
+          "package_name": "com.example.dome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnGndJnCax_UEhAYfegqFCq2zRDNzbajc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
