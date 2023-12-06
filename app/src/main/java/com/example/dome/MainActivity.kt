@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             nuevaTareaEditText.layoutParams =
                 LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f)
             nuevaTareaEditText.hint = "Tarea"
-            nuevaTareaEditText.textSize = 20f
+            nuevaTareaEditText.textSize = 22f
             nuevaTareaEditText.setPadding(18, 18, 18, 18)
             nuevaTareaEditText.setBackgroundColor(Color.TRANSPARENT)
             nuevaTareaEditText.text = Editable.Factory.getInstance().newEditable(tarea)
